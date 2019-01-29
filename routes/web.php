@@ -14,3 +14,35 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::prefix('admin')->namespace('Admin')->group(function (){
+    $this->get('/panel','PanelController@index');
+    $this->resource('schools','SchoolController');
+    $this->resource('users','UserController');
+    $this->resource('address','AddressController');
+    $this->resource('{name}/classroom_teacher','classroom_teacherController');
+    $this->resource('{name}/lesson_teacher','lesson_teacherController');
+    $this->get('school/{name}','PageController@index');
+   $this->resource('{name}/classroom','ClassroomController');
+   $this->resource('{name}/students','StudentsController');
+   $this->resource('{name}/teachers','TeachersController');
+   $this->resource('{class}/{name}/lesson','LessonController');
+   $this->resource('{class}/{name}/student','StudentController');
+   $this->resource('{class}/{name}/teacher','TeacherController');
+});
+//Route::get('/admin/panel', 'Admin\PanelController@index');
+
+Route::group(['namespace'=>'Auth'],function(){
+    $this->get('login', 'LoginController@showLoginForm')->name('login');
+    $this->post('login', 'LoginController@login');
+    $this->post('logout', 'LoginController@logout')->name('logout');
+
+    // Registration Routes...
+    $this->get('register', '\RegisterController@showRegistrationForm')->name('register');
+    $this->post('register', '\RegisterController@register');
+
+    // Password Reset Routes...
+    $this->get('password/reset', '\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+    $this->post('password/email', '\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+    $this->get('password/reset/{token}', '\ResetPasswordController@showResetForm')->name('password.reset');
+    $this->post('password/reset', '\ResetPasswordController@reset');
+});

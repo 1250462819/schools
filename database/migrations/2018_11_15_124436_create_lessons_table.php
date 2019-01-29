@@ -14,9 +14,11 @@ class CreateLessonsTable extends Migration
     public function up()
     {
         Schema::create('lessons', function (Blueprint $table) {
-            $table->integer('id');
+            $table->increments('id');
             $table->string('name');
             $table->string('unit');
+            $table->integer('classroom_id')->unsigned();
+            $table->foreign('classroom_id')->references('id')->on('classrooms')->onDelete('cascade');
             $table->timestamps();
         });
         Schema::create('lesson_student', function (Blueprint $table) {
@@ -27,6 +29,7 @@ class CreateLessonsTable extends Migration
 
         });
         Schema::create('lesson_teacher', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('lesson_id');
             $table->foreign('lesson_id')->references('id')->on('lessons')->onDelete('cascade');
             $table->integer('teacher_id');
