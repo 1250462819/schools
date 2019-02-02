@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::prefix('admin')->namespace('Admin')->middleware('auth:web','checkAdmin')->group(function (){
+Route::prefix('admin')->namespace('Admin')->middleware(['auth:web','checkAdmin'])->group(function (){
     $this->get('/panel','PanelController@index');
     $this->resource('schools','SchoolController');
     $this->resource('users','UserController');
