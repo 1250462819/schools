@@ -12,8 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Home.index');
 });
+Route::get('/home/{name}','Home\HomeController@index');
+Route::get('/search','Admin\UserController@search');
+
+
 Route::prefix('admin')->namespace('Admin')->middleware(['auth:web','checkAdmin'])->group(function (){
     $this->get('/panel','PanelController@index');
     $this->resource('schools','SchoolController');

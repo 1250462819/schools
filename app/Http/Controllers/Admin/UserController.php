@@ -105,4 +105,11 @@ class UserController extends Controller
         $user->delete();
         return redirect(route('users.index'));
     }
+
+
+    public function search(){
+        $keyword=request('search');
+        $users=User::search($keyword)->latest()->get();
+        return view('Admin.user.all',compact('users'));
+    }
 }

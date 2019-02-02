@@ -43,6 +43,7 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <div class="page-header head-section">
                 <h>مدارس</h>
+
                 <div class="btn-group">
                     <a href="{{ route('schools.create') }}" class="btn btn-sm btn-primary">اضافه کردن مدرسه ها</a>
                     <a href="{{ route('address.create') }}" class="btn btn-sm btn-info">اضافه کردن آدرس</a>

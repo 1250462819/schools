@@ -35,6 +35,11 @@ class User extends Authenticatable
     public function isAdmin(){
         return $this->role == "admin" ? true : false;
     }
+    public function scopeSearch($query ,$keyword){
+        $query->where('name','like','%'.$keyword.'%')
+            ->orwhere('code','like','%'.$keyword.'%');
+        return $query;
+    }
 
 }
 

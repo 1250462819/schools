@@ -15,7 +15,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -42,7 +43,20 @@
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <div class="page-header head-section">
-                <h>مدارس</h>
+                <div class="well">
+                    <h>جست و جو</h>
+                    <div class="input-group">
+                        <form class="search-form" action="/search" method="get">
+                            <input type="text" style="width:79%" name="search" class="form-control">
+                            <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
                 <div class="btn-group">
                     <a href="{{ route('users.create') }}" class="btn btn-sm btn-primary">اضافه کردن افراد</a>
                 </div>
@@ -77,7 +91,7 @@
                                 <form action="{{route('users.destroy',['id'=>$user->id])}}" method="post">
                                     {{method_field('delete')}}
                                     {{csrf_field()}}
-                                    <div  class="btn-group btn-group-xs">
+                                    <div class="btn-group btn-group-xs">
                                         <a href="{{route('users.edit',['id'=>$user->id])}}" class="btn btn-primary">ویرایش</a>
                                         <button type="submit" class="btn btn-danger">حذف</button>
                                     </div>

@@ -1116,4 +1116,12 @@ textarea,
 .control-label {
   margin-bottom: 10px !important;
 }
+.search-form{
+  float: right;
+  width: 87%;
+}
+.search-form input{
+  float: right;
+  width: 79%;
+}
 
