@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::prefix('admin')->namespace('Admin')->group(function (){
+Route::prefix('admin')->namespace('Admin')->middleware(['auth:web','checkAdmin'])->group(function (){
     $this->get('/panel','PanelController@index');
     $this->resource('schools','SchoolController');
     $this->resource('users','UserController');
@@ -34,7 +34,7 @@ Route::prefix('admin')->namespace('Admin')->group(function (){
 Route::group(['namespace'=>'Auth'],function(){
     $this->get('login', 'LoginController@showLoginForm')->name('login');
     $this->post('login', 'LoginController@login');
-    $this->post('logout', 'LoginController@logout')->name('logout');
+    $this->get('logout', 'LoginController@logout')->name('logout');
 
     // Registration Routes...
     $this->get('register', '\RegisterController@showRegistrationForm')->name('register');

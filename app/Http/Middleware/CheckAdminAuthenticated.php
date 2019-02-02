@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Middleware;
-
+use App\User;
 use Closure;
+use Illuminate\Support\Facades\Auth;
 
 class CheckAdminAuthenticated
 {
@@ -18,6 +19,7 @@ class CheckAdminAuthenticated
         if(auth()->check()){
             if(auth()->user()->isAdmin())
                 return $next($request);
+                //return redirect('/admin/schools');
         }
         return  redirect('/');
     }
