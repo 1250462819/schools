@@ -17,11 +17,11 @@ class CreateConditionsTable extends Migration
             $table->integer('id');
             $table->string('type');
             $table->string('mark');
-            $table->integer('student_id');
+            $table->integer('student_id')->unsigned();
             $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
-            $table->integer('teacher_id');
+            $table->integer('teacher_id')->unsigned();
             $table->foreign('teacher_id')->references('id')->on('teachers')->onDelete('cascade');
-            $table->integer('lesson_id');
+            $table->integer('lesson_id')->unsigned();
             $table->foreign('lesson_id')->references('id')->on('lessons')->onDelete('cascade');
             $table->date('date');
             $table->string('base');
