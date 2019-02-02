@@ -13,6 +13,8 @@ html,
 body {
 	height: 100%;
 	font-family: 'Rubik', sans-serif;
+	/* direction: rtl; */
+
 }
 
 h1,
@@ -241,11 +243,15 @@ ol {
 	display: inline-block;
 	margin-right: 50px;
 	padding-top: 20px;
+	float: right;
+
 }
 
 .header-info {
 	display: inline-block;
-	float: right;
+	float: left;
+	direction: rtl;
+	text-align: right;
 }
 
 .header-info .hf-item {
@@ -302,11 +308,15 @@ ol {
 
 .nav-section {
 	background: #020031;
+	direction: rtl;
+	align-content: right;
+	align-items: right;
 }
 
 .nav-section .nav-right {
-	float: right;
+	/* float: right; */
 	padding-top: 23px;
+	float: left;
 }
 
 .nav-section .nav-right a {
@@ -317,6 +327,7 @@ ol {
 
 .main-menu {
 	list-style: none;
+	width: 33.1em;
 }
 
 .main-menu li {
@@ -360,6 +371,9 @@ ol {
 	display: table-cell;
 	vertical-align: middle;
 	z-index: 2;
+	text-align: right;
+	/* float: right; */
+	direction: rtl;
 }
 
 .hs-item .hs-subtitle {
@@ -461,11 +475,14 @@ ol {
 .counter-section {
 	background: #020031;
 	padding: 40px 0;
+	/* direction: right; */
+	/* float: right; */
+	align-content: right;
 }
 
 .counter-section .big-icon {
 	display: block;
-	float: left;
+	float: right;
 	width: 71px;
 	height: 71px;
 	border-radius: 70px;
@@ -473,6 +490,8 @@ ol {
 	text-align: center;
 	padding-top: 20px;
 	margin-right: 15px;
+	direction: rtl;
+
 }
 
 .counter-section .big-icon i {
@@ -492,10 +511,13 @@ ol {
 	border-right: 1px solid #35335a;
 	text-align: center;
 	display: inline-block;
+	float: left;
+	/* direction: rtl; */
 }
 
 .counter-section .counter .counter-item:last-child {
 	border-right: none;
+	/* float: left; */
 }
 
 .counter-section .counter .counter-item h4 {
@@ -506,6 +528,7 @@ ol {
 
 .counter-content {
 	padding-left: 90px;
+	/* float: left; */
 }
 
 .counter-content h2 {
@@ -532,15 +555,20 @@ ol {
 
 .services {
 	margin-bottom: -50px;
+	direction: rtl;
 }
 
 .service-item {
 	margin-bottom: 50px;
+	direction: rtl;
+	float: right;
 }
 
 .service-item .service-icon {
 	width: 45px;
-	float: left;
+	float: right;
+	direction: rtl;
+
 }
 
 .service-item .service-icon img {
@@ -548,12 +576,17 @@ ol {
 }
 
 .service-item .service-content {
-	padding-left: 75px;
+	/* padding-left: 75px; */
+	padding-right: 75px;
+	direction: rtl;
+	/* float: right; */
+	text-align: right;
 }
 
 .service-item .service-content h4 {
 	margin-bottom: 15px;
 	font-weight: 400;
+	direction: rtl;
 }
 
 /*---------------------
@@ -562,6 +595,8 @@ ol {
 
 .enroll-section {
 	position: relative;
+	/* float: right; */
+	direction: rtl;
 }
 
 .enroll-section:after {
@@ -573,29 +608,42 @@ ol {
 	top: 0;
 	background: #000;
 	opacity: 0.8;
+	float: right;
+	direction: right;
 }
 
 .enroll-section .container {
 	position: relative;
 	z-index: 1;
+	
+	/* float: right; */
+	direction: right;
+	text-align: right;
 }
 
 .enroll-section .section-title {
 	margin-bottom: 40px;
+
+	float: right;
+	direction: rtl;
 }
 
 .enroll-list-item {
-	padding-left: 70px;
+	padding-right: 70px;
 	position: relative;
 	padding-bottom: 15px;
 	margin-bottom: 10px;
+
+	float: right;
+	direction: rtl;
+	text-align: right;
 }
 
 .enroll-list-item span {
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	left: 0;
+	right: 0;
 	top: 0;
 	text-align: center;
 	border-radius: 50px;
@@ -603,29 +651,37 @@ ol {
 	font-size: 16px;
 	font-weight: 500;
 	padding-top: 10px;
+	direction: rtl;
+	float: right;
 }
 
 .enroll-list-item h5 {
 	font-weight: 400;
 	margin-bottom: 10px;
+	/* float: right; */
 }
 
 .enroll-list-item:after {
 	position: absolute;
 	content: '';
 	height: calc(100% - 45px);
-	left: 20px;
+	right: 20px;
 	top: 48px;
 	border-left: 1px dashed #6c6e70;
+	direction: rtl;
 }
 
 .enroll-list-item:last-child {
 	margin-bottom: 0;
 	padding-bottom: 0;
+	float: right;
+	direction: rtl;
 }
 
 .enroll-list-item:last-child:after {
 	display: none;
+	float: right;
+	direction: rtl;
 }
 
 /*---------------------
@@ -634,15 +690,18 @@ ol {
 
 .courses-section .container {
 	margin-bottom: -50px;
+	direction: rtl;
 }
 
 .course-item {
 	margin-bottom: 50px;
+	direction: rtl;
 }
 
 .course-item .course-thumb {
 	margin-bottom: 45px;
 	position: relative;
+	direction: rtl;
 }
 
 .course-item .course-thumb img {
@@ -655,6 +714,7 @@ ol {
 	width: 100%;
 	left: 0;
 	bottom: -19px;
+	direction: rtl;
 }
 
 .course-item .course-thumb .course-cat span {
@@ -670,33 +730,42 @@ ol {
 	display: inline-block;
 	border-radius: 50px;
 	letter-spacing: 2px;
+	direction: rtl;
 }
 
 .course-item .course-info {
 	text-align: center;
 	margin: 0 -15px;
+	direction: rtl;
 }
 
 .course-item .course-info .date {
 	color: #f6783a;
 	font-size: 14px;
 	margin-bottom: 10px;
+	direction: rtl;
 }
 
 .course-item .course-info h4 {
 	font-weight: 400;
 	line-height: 1.3;
+
+	direction: rtl;
 }
 
 .course-item .course-info .cource-price {
 	padding-top: 15px;
 	color: #f6783a;
+
+	direction: rtl;
 }
 
 .course-item .course-info .cource-price span {
 	font-size: 14px;
 	font-weight: 500;
 	color: #b7b7b7;
+
+	direction: rtl;
 }
 
 /*---------------------
@@ -706,6 +775,7 @@ ol {
 .fact-section {
 	background-position: center center;
 	position: relative;
+	/* float: right; */
 }
 
 .fact-section:after {
@@ -717,11 +787,14 @@ ol {
 	top: 0;
 	background: #000;
 	opacity: 0.8;
+	float: right;
 }
 
 .fact-section .container {
 	position: relative;
 	z-index: 1;
+
+	/* float: right; */
 }
 
 .fact {
@@ -733,12 +806,13 @@ ol {
 	color: #fff;
 	width: 50px;
 	display: inline-block;
+	float: right;
 }
 
 .fact-text {
 	padding-left: 20px;
 	display: inline-block;
-	text-align: left;
+	text-align: right;
 }
 
 .fact-text h2 {
@@ -758,15 +832,22 @@ ol {
 
 .event-item {
 	margin-bottom: 50px;
+	
+	direction: rtl;
+	text-align: center;
 }
 
 .event-item .event-thumb {
 	margin-bottom: 45px;
 	position: relative;
+
+	direction: rtl;
 }
 
 .event-item .event-thumb img {
 	min-width: 100%;
+
+	direction: rtl;
 }
 
 .event-item .event-thumb .event-date {
@@ -775,6 +856,12 @@ ol {
 	width: 100%;
 	left: 0;
 	bottom: -19px;
+
+	direction: rtl;
+}
+
+.event-title {
+	direction: rtl;
 }
 
 .event-item .event-thumb .event-date span {
@@ -789,25 +876,35 @@ ol {
 	display: inline-block;
 	border-radius: 50px;
 	letter-spacing: 2px;
+
+	direction: rtl;
 }
 
 .event-item .event-info {
 	text-align: center;
+
+	direction: rtl;
 }
 
 .event-item .event-info h4 {
 	margin-bottom: 20px;
 	font-weight: 400;
+
+	direction: rtl;
 }
 
 .event-item .event-info p {
 	margin-bottom: 30px;
+
+	direction: rtl;
 }
 
 .event-item .event-info p i {
 	color: #f6783a;
 	padding-left: 13px;
 	padding-right: 4px;
+
+	direction: rtl;
 }
 
 .event-item .event-info .event-readmore {
@@ -816,10 +913,14 @@ ol {
 	color: #b7b7b7;
 	letter-spacing: 2px;
 	font-weight: 500;
+
+	direction: rtl;
 }
 
 .event-item .event-info .event-readmore i {
 	color: #f6783a;
+
+	direction: rtl;
 }
 
 /*---------------------
@@ -903,16 +1004,27 @@ ol {
 .blog-item {
 	margin-bottom: 60px;
 	overflow: hidden;
+
+	direction: rtl;
+	/* float: right; */
+	text-align: right;
 }
 
 .blog-item .blog-thumb {
 	width: 230px;
 	height: 170px;
 	float: left;
+
+	direction: rtl;
+	float: right;
 }
 
 .blog-item .blog-content {
-	padding-left: 258px;
+	/* padding-left: 258px; */
+
+	direction: rtl;
+	padding-right: 258px;
+	/* float: right; */
 }
 
 .blog-item .blog-content h4 {
@@ -920,21 +1032,33 @@ ol {
 	font-weight: 400;
 	margin-bottom: 8px;
 	line-height: 1.4;
+
+	direction: rtl;
+	/* float: right; */
 }
 
 .blog-item .blog-meta {
 	margin-bottom: 15px;
+
+	direction: rtl;
+	/* float: right; */
 }
 
 .blog-item .blog-meta span {
 	margin-right: 10px;
 	font-size: 12px;
 	color: #b7b7b7;
+
+	direction: rtl;
+	/* float: right; */
 }
 
 .blog-item .blog-meta span i {
 	color: #f6783a;
 	margin-right: 3px;
+
+	direction: rtl;
+	/* float: right; */
 }
 
 /*---------------------
@@ -944,11 +1068,18 @@ ol {
 .newsletter-section {
 	background: #f7f7f7;
 	padding: 50px 0;
+
+	/* float: right; */
+	direction: rtl;
+	text-align: right;
 }
 
 .newsletter-section .newsletter {
 	position: relative;
 	margin-top: 12px;
+
+	direction: rtl;
+	/* float: right; */
 }
 
 .newsletter-section .newsletter input {
@@ -958,6 +1089,11 @@ ol {
 	border: none;
 	border-radius: 50px;
 	padding-right: 170px;
+
+	/* float: right; */
+	/* float: rtl; */
+	direction: rtl;
+	
 }
 
 .newsletter-section .newsletter .site-btn {
@@ -967,6 +1103,9 @@ ol {
 	height: 100%;
 	border-radius: 0px 50px 50px 0px;
 	min-width: 150px;
+
+	/* float: right; */
+	direction: rtl;
 }
 
 /*---------------------
@@ -978,10 +1117,15 @@ ol {
 	background-image: url("../img/footer-bg.png");
 	background-repeat: no-repeat;
 	background-position: center 75px;
+
+	direction: rtl;
+	text-align: right;
 }
 
 .footer-section .footer-top {
 	padding: 65px 15px;
+
+	direction: rtl;
 }
 
 .footer-section .copyright {
@@ -993,11 +1137,15 @@ ol {
 .footer-section .copyright p {
 	color: #b7b7b7;
 	margin-bottom: 0;
+
+	direction: rtl;
 }
 
 .footer-section .copyright p a {
 	color: #fff;
 	font-weight: 500;
+
+	direction: rtl;
 }
 
 .footer-section .copyright p a:hover {
@@ -1009,11 +1157,18 @@ ol {
 	color: #fff;
 	margin-bottom: 25px;
 	padding-top: 10px;
+
+	direction: rtl;
+	text-align: right;
+
 }
 
 .footer-widget p,
 .footer-widget span {
 	color: #b7b7b7;
+
+	direction: rtl;
+	text-align: right;
 }
 
 .footer-widget ul {
@@ -1022,19 +1177,32 @@ ol {
 
 .footer-widget .about-widget img {
 	margin-bottom: 30px;
+	margin-left: 150px;
+
+	float: right;
+	direction: rtl;
+	text-align: right;
 }
 
 .footer-widget .about-widget p {
 	margin-bottom: 35px;
+
+	direction: rtl;
+	text-align: right;
 }
 
 .footer-widget .social a {
 	color: #b7b7b7;
 	margin-right: 15px;
+
+	direction: rtl;
+	text-align: right;
 }
 
 .footer-widget .dobule-link ul {
 	display: inline-block;
+
+	direction: rtl;
 }
 
 .footer-widget .dobule-link ul a {
@@ -1042,6 +1210,8 @@ ol {
 	font-size: 14px;
 	color: #b7b7b7;
 	margin-bottom: 15px;
+
+	direction: rtl;
 }
 
 .footer-widget .dobule-link ul a:hover {
@@ -1076,14 +1246,22 @@ ol {
 .footer-widget .contact li {
 	margin-bottom: 15px;
 	display: block;
+
+	direction: rtl;
+
 }
 
 .footer-widget .contact li p {
 	margin-bottom: 0;
+
+	direction: rtl;
 }
 
 .footer-widget .contact i {
 	font-size: 12px;
+
+	direction: rtl;
+	text-align: right;
 }
 
 /*---------------------
@@ -1145,7 +1323,7 @@ ol {
 	font-weight: 400;
 	margin-bottom: 12px;
 }
-
+                             
 .about-text .about-list {
 	list-style: none;
 	padding-top: 10px;

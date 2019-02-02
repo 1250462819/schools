@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/admin.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="/css/themify-icons.css"/>
@@ -46,11 +45,11 @@
         <div class="header-info">
             <div class="hf-item">
                 <i class="fa fa-clock-o"></i>
-                <p><span>Working time:</span>Monday - Friday: 08 AM - 06 PM</p>
+                <p><span>ساعات کاری:</span>شنبه - چهارشنبه: 7 صبح تا 2 بعد از ظهر</p>
             </div>
             <div class="hf-item">
                 <i class="fa fa-map-marker"></i>
-                <p><span>Find us:</span>40 Baria Street 133/2, New York City, US</p>
+                <p><span>آدرس:</span>کاشان - میدان پلیس - انارستان 2</p>
             </div>
         </div>
     </div>
@@ -66,12 +65,12 @@
             <a href=""><i class="fa fa-shopping-cart"></i></a>
         </div>
         <ul class="main-menu">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Event</a></li>
-            <li><a href="#">COURSES</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="index.html">خانه</a></li>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="#">رویدادها</a></li>
+            <li><a href="course.html">دوره‌ها</a></li>
+            <li><a href="blog.html">وبلاگ</a></li>
+            <li><a href="contact.html">ارتباط با ما</a></li>
         </ul>
     </div>
 </nav>
@@ -86,10 +85,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
-                            <div class="hs-subtitle">Award Winning UNIVERSITY</div>
-                            <h2 class="hs-title">An investment in knowledge pays the best interest.</h2>
+                            <div class="hs-subtitle">امکانات مجموعه آموزشی</div>
+                            <h2 class="hs-title">سرمایه گذاری روی  دانش بیشترین علاقه مندی را ایجاد میکند.</h2>
                             <p class="hs-des">Education is not just about going to school and getting a degree. It's about widening your<br> knowledge and absorbing the truth about life. Knowledge is power.</p>
-                            <div class="site-btn">GET STARTED</div>
+                            <div class="site-btn">شروع کنید</div>
                         </div>
                     </div>
                 </div>
@@ -145,8 +144,8 @@
 <section class="service-section spad">
     <div class="container services">
         <div class="section-title text-center">
-            <h3>OUR SERVICES</h3>
-            <p>We provides the opportunity to prepare for life</p>
+            <h3>امکانات ما</h3>
+            <p>ما این فرصت را برای شما فراهم میکنیم تا برای زندگی آماده شوید.</p>
         </div>
         <div class="row">
             <div class="col-lg-4 col-sm-6 service-item">
@@ -154,7 +153,7 @@
                     <img src="/img/services-icons/1.png" alt="1">
                 </div>
                 <div class="service-content">
-                    <h4>Art Studio</h4>
+                    <h4>استودیوی نقاشی</h4>
                     <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
                 </div>
             </div>
@@ -163,7 +162,7 @@
                     <img src="/img/services-icons/2.png" alt="1">
                 </div>
                 <div class="service-content">
-                    <h4>Great Facility</h4>
+                    <h4>امکانات کامل</h4>
                     <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
                 </div>
             </div>
@@ -172,7 +171,7 @@
                     <img src="/img/services-icons/3.png" alt="1">
                 </div>
                 <div class="service-content">
-                    <h4>Activity Hub</h4>
+                    <h4>مجتمع ورزشی</h4>
                     <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
                 </div>
             </div>
@@ -181,7 +180,7 @@
                     <img src="/img/services-icons/4.png" alt="1">
                 </div>
                 <div class="service-content">
-                    <h4>Fully Qualified</h4>
+                    <h4>کاملا واجد شرایط</h4>
                     <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
                 </div>
             </div>
@@ -190,7 +189,7 @@
                     <img src="/img/services-icons/5.png" alt="1">
                 </div>
                 <div class="service-content">
-                    <h4>Flexible Schedule</h4>
+                    <h4>برنامه ریزی  انعظاف پذیر</h4>
                     <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
                 </div>
             </div>
@@ -199,7 +198,7 @@
                     <img src="/img/services-icons/6.png" alt="1">
                 </div>
                 <div class="service-content">
-                    <h4>Chemistry Lab</h4>
+                    <h4>آزمایشگاه شیمی</h4>
                     <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
                 </div>
             </div>
@@ -213,25 +212,26 @@
 <section class="enroll-section spad set-bg" data-setbg="img/enroll-bg.jpg">
     <div class="container">
         <div class="row">
+
             <div class="col-lg-5">
                 <div class="section-title text-white">
-                    <h3>ENROLLMENT</h3>
-                    <p>Get started with us to explore the exciting</p>
+                    <h3>نام نویسی</h3>
+                    <p>با ما شروع کن تا هیجان را درک کنی</p>
                 </div>
                 <div class="enroll-list text-white">
                     <div class="enroll-list-item">
                         <span>1</span>
-                        <h5>Contact</h5>
+                        <h5>ارتباط با ما</h5>
                         <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue.</p>
                     </div>
                     <div class="enroll-list-item">
                         <span>2</span>
-                        <h5>Consulting</h5>
+                        <h5>مشاوره</h5>
                         <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue.</p>
                     </div>
                     <div class="enroll-list-item">
                         <span>3</span>
-                        <h5>Register</h5>
+                        <h5>ثبت نام</h5>
                         <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue.</p>
                     </div>
                 </div>
@@ -249,8 +249,8 @@
 <section class="courses-section spad">
     <div class="container">
         <div class="section-title text-center">
-            <h3>OUR COURSES</h3>
-            <p>Building a better world, one course at a time</p>
+            <h3>دوره های ما</h3>
+            <p>ساختن دنیایی بهتر، یک دوره در هر زمان</p>
         </div>
         <div class="row">
             <!-- course item -->
@@ -258,7 +258,7 @@
                 <div class="course-thumb">
                     <img src="/img/course/1.jpg" alt="">
                     <div class="course-cat">
-                        <span>BUSINESS</span>
+                        <span>کسب و کار</span>
                     </div>
                 </div>
                 <div class="course-info">
@@ -272,7 +272,7 @@
                 <div class="course-thumb">
                     <img src="/img/course/2.jpg" alt="">
                     <div class="course-cat">
-                        <span>Marketing</span>
+                        <span>بازاریابی</span>
                     </div>
                 </div>
                 <div class="course-info">
@@ -286,7 +286,7 @@
                 <div class="course-thumb">
                     <img src="/img/course/3.jpg" alt="">
                     <div class="course-cat">
-                        <span>DESIGN</span>
+                        <span>طراحی</span>
                     </div>
                 </div>
                 <div class="course-info">
@@ -300,7 +300,7 @@
                 <div class="course-thumb">
                     <img src="/img/course/4.jpg" alt="">
                     <div class="course-cat">
-                        <span>DATABASE</span>
+                        <span>پایگاه داده</span>
                     </div>
                 </div>
                 <div class="course-info">
@@ -314,12 +314,12 @@
                 <div class="course-thumb">
                     <img src="/img/course/5.jpg" alt="">
                     <div class="course-cat">
-                        <span>PROGRAM</span>
+                        <span>برنامه نویسی</span>
                     </div>
                 </div>
                 <div class="course-info">
                     <div class="date"><i class="fa fa-clock-o"></i> 22 Mar 2018</div>
-                    <h4>Web Developer Bootcamp<br>Make web  applications</h4>
+                    <h4>دوره تکمیلی طراحی وب<br>ساختن برنامه‌های تحت وب</h4>
                     <h4 class="cource-price">$250<span>/month</span></h4>
                 </div>
             </div>
@@ -328,7 +328,7 @@
                 <div class="course-thumb">
                     <img src="/img/course/6.jpg" alt="">
                     <div class="course-cat">
-                        <span>BUSINESS</span>
+                        <span>تحلیل داده</span>
                     </div>
                 </div>
                 <div class="course-info">
@@ -344,7 +344,7 @@
 
 
 <!-- Fact section -->
-<section class="fact-section spad set-bg" data-setbg="/img/fact-bg.jpg">
+<section class="fact-section spad set-bg" data-setbg="img/fact-bg.jpg">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-lg-3 fact">
@@ -353,7 +353,7 @@
                 </div>
                 <div class="fact-text">
                     <h2>50</h2>
-                    <p>YEARS</p>
+                    <p>سال</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3 fact">
@@ -362,7 +362,7 @@
                 </div>
                 <div class="fact-text">
                     <h2>80</h2>
-                    <p>TEACHERS</p>
+                    <p>دوره</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3 fact">
@@ -371,7 +371,7 @@
                 </div>
                 <div class="fact-text">
                     <h2>500</h2>
-                    <p>STUDENTS</p>
+                    <p>دانش‌آموز</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3 fact">
@@ -380,7 +380,7 @@
                 </div>
                 <div class="fact-text">
                     <h2>800+</h2>
-                    <p>LESSONS</p>
+                    <p>درس</p>
                 </div>
             </div>
         </div>
@@ -392,9 +392,9 @@
 <!-- Event section -->
 <section class="event-section spad">
     <div class="container">
-        <div class="section-title text-center">
-            <h3>OUR EVENTS</h3>
-            <p>Our department  initiated a series of events</p>
+        <div class="section-title text-center event-title">
+            <h3>رویدادهای ما</h3>
+            <p>دپارتمان ما یک سری از رویدادها را آغاز می‌کند.</p>
         </div>
         <div class="row">
             <div class="col-md-6 event-item">
@@ -405,7 +405,7 @@
                     </div>
                 </div>
                 <div class="event-info">
-                    <h4>The dos and don'ts of writing a personal<br>statement for languages</h4>
+                    <h4>بایدها و نبایدها برای نوشتن پروپوزال<br>statement for languages</h4>
                     <p><i class="fa fa-calendar-o"></i> 08:00 AM - 10:00 AM <i class="fa fa-map-marker"></i> Center Building, Block A</p>
                     <a href="" class="event-readmore">REGISTER <i class="fa fa-angle-double-right"></i></a>
                 </div>
@@ -418,7 +418,7 @@
                     </div>
                 </div>
                 <div class="event-info">
-                    <h4>University interview tips:<br>confidence won't make up for flannel</h4>
+                    <h4>نکات مربوط به مصاحبه دانشگاه :<br>confidence won't make up for flannel</h4>
                     <p><i class="fa fa-calendar-o"></i> 08:00 AM - 10:00 AM <i class="fa fa-map-marker"></i> Center Building, Block A</p>
                     <a href="" class="event-readmore">REGISTER <i class="fa fa-angle-double-right"></i></a>
                 </div>
@@ -454,7 +454,7 @@
         <div class="gallery-item set-bg" data-setbg="img/gallery/6.jpg">
             <a class="img-popup" href="/img/gallery/6.jpg"><i class="ti-plus"></i></a>
         </div>
-        <div class="gallery-item set-bg" data-setbg="img/gallery/7.jpg">
+        <div class="gallery-item set-bg" data-setbg="/img/gallery/7.jpg">
             <a class="img-popup" href="/img/gallery/7.jpg"><i class="ti-plus"></i></a>
         </div>
     </div>
@@ -466,8 +466,8 @@
 <section class="blog-section spad">
     <div class="container">
         <div class="section-title text-center">
-            <h3>LATEST NEWS</h3>
-            <p>Get latest breaking news & top stories today</p>
+            <h3>آخرین اخبار</h3>
+            <p>دریافت آخرین اخبار & بهترین داستان‌‌های امروز</p>
         </div>
         <div class="row">
             <div class="col-xl-6">
@@ -534,14 +534,14 @@
         <div class="row">
             <div class="col-md-5 col-lg-7">
                 <div class="section-title mb-md-0">
-                    <h3>NEWSLETTER</h3>
+                    <h3>مجله خبری</h3>
                     <p>Subscribe and get the latest news and useful tips, advice and best offer.</p>
                 </div>
             </div>
             <div class="col-md-7 col-lg-5">
                 <form class="newsletter">
-                    <input type="text" placeholder="Enter your email">
-                    <button class="site-btn">SUBSCRIBE</button>
+                    <input type="text" placeholder="ایمیل خود را وارد کنید">
+                    <button class="site-btn">دنبال کردن</button>
                 </form>
             </div>
         </div>
@@ -573,24 +573,24 @@
                 <h6 class="fw-title">USEFUL LINK</h6>
                 <div class="dobule-link">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Features</a></li>
+                        <li><a href="">خانه</a></li>
+                        <li><a href="">درباره ما</a></li>
+                        <li><a href="">امکانات</a></li>
+                        <li><a href="">رویدادها</a></li>
+                        <li><a href="">امکانات</a></li>
                     </ul>
                     <ul>
-                        <li><a href="">Policy</a></li>
-                        <li><a href="">Term</a></li>
-                        <li><a href="">Help</a></li>
+                        <li><a href="">قوانین</a></li>
+                        <li><a href="">شرایط</a></li>
+                        <li><a href="">راهنمایی</a></li>
                         <li><a href="">FAQs</a></li>
-                        <li><a href="">Site map</a></li>
+                        <li><a href="">نقشه سایت</a></li>
                     </ul>
                 </div>
             </div>
             <!-- widget -->
             <div class="col-sm-6 col-lg-3 footer-widget">
-                <h6 class="fw-title">RECENT POST</h6>
+                <h6 class="fw-title">آخرین مقالات</h6>
                 <ul class="recent-post">
                     <li>
                         <p>Snackable study:How to break <br> up your master's degree</p>
@@ -604,7 +604,7 @@
             </div>
             <!-- widget -->
             <div class="col-sm-6 col-lg-3 footer-widget">
-                <h6 class="fw-title">CONTACT</h6>
+                <h6 class="fw-title">ارتباط با ما</h6>
                 <ul class="contact">
                     <li><p><i class="fa fa-map-marker"></i> 40 Baria Street 133/2, NewYork City,US</p></li>
                     <li><p><i class="fa fa-phone"></i> (+88) 111 555 666</p></li>
@@ -618,7 +618,7 @@
     <div class="copyright">
         <div class="container">
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://zilouchian.org" target="_blank">TechnoTeam</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
         </div>
     </div>
