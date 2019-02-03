@@ -107,9 +107,5 @@ class UserController extends Controller
     }
 
 
-    public function search(){
-        $keyword=request('search');
-        $users=User::search($keyword)->latest()->get();
-        return view('Admin.user.all',compact('users'));
-    }
+
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,5 +25,11 @@ class HomeController extends Controller
     public function index()
     {
         return view('Home');
+    }
+
+    public function search(){
+        $keyword=request('search');
+        $users=User::search($keyword)->latest()->get();
+        return view('Admin.user.all',compact('users'));
     }
 }
