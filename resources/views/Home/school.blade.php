@@ -34,6 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header-top">
 		<div class="container">
 			<div class="head-main">
+				<h style="font-size: 80px; ">{{$name}}	</h>
 				<a href="index.html"><img src="/weblog/images/logo-1.png" alt="" /></a>
 			</div>
 		</div>
@@ -46,11 +47,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="navigation">
 				 <span class="menu"></span> 
 					<ul class="navig">
-						<li><a href="index.html"  class="active">صفحه اصلی</a></li>
-						<li><a href="about.html">درباره ما</a></li>
-						<li><a href="gallery.html">گالری</a></li>
-						<li><a href="typo.html">خدمات</a></li>
-						<li><a href="contact.html">تماس با ما</a></li>
+						<li><a href="#"  class="active">صفحه اصلی</a></li>
+						<li><a href="/home/{{$name}}/about">درباره ما</a></li>
+						<li><a href="/home/{{$name}}/gallery">گالری</a></li>
+						<li><a href="/home/{{$name}}/classroom">کلاس ها</a></li>
+						<li><a href="/home/{{$name}}/teacher">معلم ها</a></li>
+						<li><a href="/home/{{$name}}/contact">تماس با ما</a></li>
 					</ul>
 			</div>
 			<div class="header-left">
