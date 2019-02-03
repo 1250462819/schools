@@ -28,14 +28,14 @@ class CreateLessonsTable extends Migration
         //     $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
 
         // });
-        // Schema::create('lesson_teacher', function (Blueprint $table) {
-        //     $table->increments('id');
-        //     $table->integer('lesson_id');
-        //     $table->foreign('lesson_id')->references('id')->on('lessons')->onDelete('cascade');
-        //     $table->integer('teacher_id');
-        //     $table->foreign('teacher_id')->references('id')->on('teachers')->onDelete('cascade');
+        Schema::create('lesson_teacher', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('lesson_id');
+            $table->foreign('lesson_id')->references('id')->on('lessons')->onDelete('cascade');
+            $table->integer('teacher_id');
+            $table->foreign('teacher_id')->references('id')->on('teachers')->onDelete('cascade');
 
-        // });
+        });
 
     }
 
@@ -48,6 +48,6 @@ class CreateLessonsTable extends Migration
     {
         Schema::dropIfExists('lessons');
         // Schema::dropIfExists('lesson_student');
-        // Schema::dropIfExists('lesson_teacher');
+        Schema::dropIfExists('lesson_teacher');
     }
 }
