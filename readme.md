@@ -53,4 +53,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Backup School Database
 
+```bash
 mysqldump -u root -p --routines school > mydb.sql
+```
