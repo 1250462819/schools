@@ -22,7 +22,7 @@ Route::get('/home/{name}/teacher','Home\HomeController@teacher');
 
 
 
-Route::get('/search','Admin\UserController@search');
+Route::get('/search','HomeController@search');
 
 
 Route::prefix('admin')->namespace('Admin')->middleware(['auth:web','checkAdmin'])->group(function (){
