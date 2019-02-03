@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Address;
 use App\Classroom;
+use App\Post;
 use App\Slider;
 use App\Student;
 use App\Teacher;
@@ -15,8 +16,8 @@ class PostController extends Controller
     public function index($name){
         $addresses=Address::all()->where('school.name','=',$name);
         $sliders=Slider::all()->where('school.name','=',$name);
-
-        return view('Home.school',compact('name','addresses','sliders'));
+        $posts=Post::all()->where('school.name','=',$name);
+        return view('Home.school',compact('name','addresses','sliders','posts'));
     }
 
     public function classroom($name){
