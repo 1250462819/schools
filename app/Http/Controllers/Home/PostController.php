@@ -13,4 +13,16 @@ class PostController extends Controller
     
         return view('Home.school',compact('name','addresses'));
     }
+    public function about($name){
+    
+        return view('Home.about',compact('name'));
+    }
+    public function contact($name){
+    
+        return view('Home.contact',compact('name'));
+    }
+    public function gallery($name){
+    
+        return view('Home.gallery',compact('name'));
+    }
 }
