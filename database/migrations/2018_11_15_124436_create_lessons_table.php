@@ -30,9 +30,9 @@ class CreateLessonsTable extends Migration
         // });
         Schema::create('lesson_teacher', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('lesson_id');
+            $table->integer('lesson_id')->unsigned();
             $table->foreign('lesson_id')->references('id')->on('lessons')->onDelete('cascade');
-            $table->integer('teacher_id');
+            $table->integer('teacher_id')->unsigned();
             $table->foreign('teacher_id')->references('id')->on('teachers')->onDelete('cascade');
 
         });
