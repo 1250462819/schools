@@ -31,6 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--script-->
 	<script src="/weblog/js/modernizr.custom.97074.js"></script>
 <script src="/weblog/js/jquery.chocolat.js"></script>
+
 		<link rel="stylesheet" href="/weblog/css/chocolat.css" type="text/css" media="screen" charset="utf-8">
 		<!--light-box-files -->
 		<script type="text/javascript" charset="utf-8">
@@ -45,7 +46,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header-top">
 		<div class="container">
 			<div class="head-main">
-				<a href="index.html"><img src="/weblog/images/logo-1.png" alt="" /></a>
+				<h style="font-size: 80px; ">{{$name}}    </h>
+				<a href="#"><img src="/weblog/images/logo-1.png" alt="" /></a>
 			</div>
 		</div>
 	</div>
@@ -55,14 +57,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="head">
 			<div class="navigation">
-				 <span class="menu"></span> 
-					<ul class="navig">
-						<li><a href="index.html"  class="active">صفحه اصلی</a></li>
-						<li><a href="about.html">درباره ما</a></li>
-						<li><a href="gallery.html">گالری</a></li>
-						<li><a href="typo.html">خدمات</a></li>
-						<li><a href="contact.html">تماس با ما</a></li>
-					</ul>
+				 <span class="menu"></span>
+				<ul class="navig">
+					<li><a href="#" class="active">صفحه اصلی</a></li>
+					<li><a href="/home/{{$name}}/about">درباره ما</a></li>
+					<li><a href="/home/{{$name}}/gallery">گالری</a></li>
+					<li><a href="/home/{{$name}}/classroom">کلاس ها</a></li>
+					<li><a href="/home/{{$name}}/teacher">معلم ها</a></li>
+					<li><a href="/home/{{$name}}/contact">تماس با ما</a></li>
+				</ul>
 			</div>
 			<div class="header-left">
 				<div class="search-bar">
@@ -94,17 +97,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner">
 		<div class="container">
 			<div class="banner-top">
+				@foreach($sliders as $slider)
+					<img src="/weblog/images/{{$slider->pic}}" style="width: 100%;height:600px">
+				@endforeach
 				<div class="banner-text">
 					<h2>
 
-لورم ایپسوم</h2>
+						لورم ایپسوم</h2>
 					<h1>
 
-لورم ایپسوم یا طرح‌نما</h1>
+						لورم ایپسوم یا طرح‌نما</h1>
+
 					<div class="banner-btn">
 						<a href="single.html">
-ادامه مطلب
-</a>
+							ادامه مطلب
+						</a>
 					</div>
 				</div>
 			</div>

@@ -45,7 +45,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header-top">
 		<div class="container">
 			<div class="head-main">
-				<a href="index.html"><img src="/weblog/images/logo-1.png" alt="" /></a>
+				<h style="font-size: 80px; ">{{$name}}    </h>
+				<a href="#"><img src="/weblog/images/logo-1.png" alt="" /></a>
 			</div>
 		</div>
 	</div>
@@ -55,14 +56,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="head">
 			<div class="navigation">
-				 <span class="menu"></span> 
-					<ul class="navig">
-						<li><a href="index.html"  class="active">صفحه اصلی</a></li>
-						<li><a href="about.html">درباره ما</a></li>
-						<li><a href="gallery.html">گالری</a></li>
-						<li><a href="typo.html">خدمات</a></li>
-						<li><a href="contact.html">تماس با ما</a></li>
-					</ul>
+				 <span class="menu"></span>
+				<ul class="navig">
+					<li><a href="#" class="active">صفحه اصلی</a></li>
+					<li><a href="/home/{{$name}}/about">درباره ما</a></li>
+					<li><a href="/home/{{$name}}/gallery">گالری</a></li>
+					<li><a href="/home/{{$name}}/classroom">کلاس ها</a></li>
+					<li><a href="/home/{{$name}}/teacher">معلم ها</a></li>
+					<li><a href="/home/{{$name}}/contact">تماس با ما</a></li>
+				</ul>
 			</div>
 			<div class="header-left">
 				<div class="search-bar">
@@ -94,17 +96,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner">
 		<div class="container">
 			<div class="banner-top">
+				@foreach($sliders as $slider)
+					<img src="/weblog/images/{{$slider->pic}}" style="width: 100%;height:600px">
+				@endforeach
 				<div class="banner-text">
 					<h2>
 
-لورم ایپسوم</h2>
+						لورم ایپسوم</h2>
 					<h1>
 
-لورم ایپسوم یا طرح‌نما</h1>
+						لورم ایپسوم یا طرح‌نما</h1>
+
 					<div class="banner-btn">
 						<a href="single.html">
-ادامه مطلب
-</a>
+							ادامه مطلب
+						</a>
 					</div>
 				</div>
 			</div>
@@ -117,7 +123,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="welcome-top heading">
 				<h3>خوش آمدید</h3>
 				<div class="welcome-bottom">
-					<img src="/weblog/images/abt-1.jpg" alt=""/>
+					@foreach($schools as $school)
+						<p>نام:{{$school->name}}</p>
+						<p>تلفن:{{$school->phone}}</p>
+					@endforeach
+						@foreach($addresses as $address)
+							<p>آدرس:{{$address->city}}-{{$address->province}}-{{$address->street}}</p>
+						@endforeach
 					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
 					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد</p>
 				</div>
@@ -129,29 +141,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="team">
 		<div class="container">
 		<div class="team-top heading">
-			<h3>تیم ما</h3>
+			<h3>معلم های ما</h3>
 		</div>
 			<div class="team-bottom">
-				<div class="col-md-3 team-right">
-					<img src="/weblog/images/t-1.jpg" alt="" />
-					<h4>الهه امیریان</h4>
-					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-				</div>
-				<div class="col-md-3 team-right">
-					<img src="/weblog/images/t-2.jpg" alt="" />
-					<h4>مریم علیزاده</h4>
-					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-				</div>
-				<div class="col-md-3 team-right">
-					<img src="/weblog/images/t-3.jpg" alt="" />
-					<h4>البرز الهامیان</h4>
-					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-				</div>
-				<div class="col-md-3 team-right">
-					<img src="/weblog/images/t-4.jpg" alt="" />
-					<h4>سپینود امینی</h4>
-					<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
-				</div>
+				@foreach($teachers as $teacher)
+					<div class="col-md-3 team-right">
+						<img src="/weblog/images/t-4.jpg" alt="" />
+						<h4>{{$teacher->user->name}}</h4>
+						{{--<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>--}}
+					@endforeach
+					@foreach($results as $result)
+						<tr>
+							<h>ایشان دارای سابقه علمی در درس</h>
+							<td>{{ $result->name }}</td><br>
+							<h>می باشند</h>
+							{{--<td>{{ $result->teacher_name}}</td><br>--}}
+							{{--<td>{{ $result->classroom_name }}</td>--}}
+				@endforeach
+					</div>
+
 				<div class="clearfix"></div>
 			</div>
 		</div>
@@ -246,8 +254,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="footer-text">
 			<p>
 
-کپی رایت@2015 تمام حقوق مادی و معنوی این سایت متعلق به گروه برنامه نویسان میباشد
-<a href="http://www.barnamenevisan.org/" target="_blank">مرجع تخصصی برنامه نویسان</a> </p>
+کپی رایت@2019 تمام حقوق مادی و معنوی این سایت متعلق به گروه ما میباشد
+</p>
 			</div>
 		</div>
 	</div>
