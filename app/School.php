@@ -33,6 +33,10 @@ class School extends Model
     {
         return $this->hasOne(Address::class);
     }
+    public function slider()
+    {
+        return $this->hasOne(Slider::class);
+    }
     public function classrooms()
     {
         return $this->hasMany(Classroom::class);

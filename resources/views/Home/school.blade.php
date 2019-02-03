@@ -85,6 +85,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner">
 		<div class="container">
 			<div class="banner-top">
+				@foreach($sliders as $slider)
+					{{$slider->school->name}}
+				<img src="/weblog/images/{{$slider->pic}}">
+				@endforeach
 				<div class="banner-text">
 					<h2>
 
@@ -92,6 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h1>
 
 لورم ایپسوم یا طرح‌نما</h1>
+
 					<div class="banner-btn">
 						<a href="single.html">
 ادامه مطلب
