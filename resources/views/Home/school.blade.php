@@ -44,12 +44,17 @@
         </div>
         <div class="header-info">
             <div class="hf-item">
+                <p>دبیرستان {{$name}}</p>
+            </div>
+            <div class="hf-item">
                 <i class="fa fa-clock-o"></i>
                 <p><span>ساعات کاری:</span>شنبه - چهارشنبه: 7 صبح تا 2 بعد از ظهر</p>
             </div>
             <div class="hf-item">
                 <i class="fa fa-map-marker"></i>
-                <p><span>آدرس:</span>کاشان - میدان پلیس - انارستان 2</p>
+                @foreach($addresses as $address)
+                <p><span>آدرس:</span>{{$address->city}}-{{$address->street}}-{{$address->province}}</p>
+                @endforeach
             </div>
         </div>
     </div>
@@ -65,12 +70,13 @@
             <a href=""><i class="fa fa-shopping-cart"></i></a>
         </div>
         <ul class="main-menu">
-            <li class="active"><a href="index.html">خانه</a></li>
-            <li><a href="about.html">درباره ما</a></li>
+            <li class="active"><a href="#">خانه</a></li>
+            <li><a href="#">درباره ما</a></li>
             <li><a href="#">رویدادها</a></li>
-            <li><a href="course.html">دوره‌ها</a></li>
-            <li><a href="blog.html">وبلاگ</a></li>
-            <li><a href="contact.html">ارتباط با ما</a></li>
+            <li><a href="/home/{{$name}}/classroom">کلاس ها</a></li>
+            <li><a href="/home/{{$name}}/student">دانش آموزان</a></li>
+            <li><a href="/home/{{$name}}/teacher">اساتید</a></li>
+            <li><a href="#">ارتباط با ما</a></li>
         </ul>
     </div>
 </nav>
