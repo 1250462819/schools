@@ -92,8 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <div class="banner-top">
             @foreach($sliders as $slider)
-                {{$slider->school->name}}
-                <img src="/weblog/images/{{$slider->pic}}">
+                <img src="/weblog/images/{{$slider->pic}}" style="width: 100%;height:600px">
             @endforeach
             <div class="banner-text">
                 <h2>

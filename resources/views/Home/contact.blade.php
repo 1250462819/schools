@@ -34,6 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header-top">
 		<div class="container">
 			<div class="head-main">
+				<h style="font-size: 80px; ">{{$name}}    </h>
 				<a href="index.html"><img src="/weblog/images/logo-1.png" alt="" /></a>
 			</div>
 		</div>
@@ -44,14 +45,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="head">
 			<div class="navigation">
-				 <span class="menu"></span> 
-					<ul class="navig">
-						<li><a href="index.html"  class="active">صفحه اصلی</a></li>
-						<li><a href="about.html">درباره ما</a></li>
-						<li><a href="gallery.html">گالری</a></li>
-						<li><a href="typo.html">خدمات</a></li>
-						<li><a href="contact.html">تماس با ما</a></li>
-					</ul>
+				 <span class="menu"></span>
+				<ul class="navig">
+					<li><a href="#" class="active">صفحه اصلی</a></li>
+					<li><a href="/home/{{$name}}/about">درباره ما</a></li>
+					<li><a href="/home/{{$name}}/gallery">گالری</a></li>
+					<li><a href="/home/{{$name}}/classroom">کلاس ها</a></li>
+					<li><a href="/home/{{$name}}/teacher">معلم ها</a></li>
+					<li><a href="/home/{{$name}}/contact">تماس با ما</a></li>
+				</ul>
 			</div>
 			<div class="header-left">
 				<div class="search-bar">
@@ -83,17 +85,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner">
 		<div class="container">
 			<div class="banner-top">
+				@foreach($sliders as $slider)
+					<img src="/weblog/images/{{$slider->pic}}" style="width: 100%;height:600px">
+				@endforeach
 				<div class="banner-text">
 					<h2>
 
-لورم ایپسوم</h2>
+						لورم ایپسوم</h2>
 					<h1>
 
-لورم ایپسوم یا طرح‌نما</h1>
+						لورم ایپسوم یا طرح‌نما</h1>
+
 					<div class="banner-btn">
 						<a href="single.html">
-ادامه مطلب
-</a>
+							ادامه مطلب
+						</a>
 					</div>
 				</div>
 			</div>
@@ -107,7 +113,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>تماس با ما</h3>
 			</div>
 			<div class="contact-bottom">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6632.248000703498!2d151.265683!3d-33.7832959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12abc7edcbeb07%3A0x5017d681632bfc0!2sManly+Vale+NSW+2093%2C+Australia!5e0!3m2!1sen!2sin!4v1433329298259" frameborder="0" style="border:0"></iframe>
+				{{--<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d52923.18695937059!2d51.36627955803367!3d34.00025963859646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d33.9850358!2d51.4099625!4m5!1s0x3f969d6a3deb60a5%3A0x95e3a2cfcd892acb!2z2K_Yp9mG2LTar9in2Ycg2qnYp9i02KfZhuKArQ!3m2!1d34.0136234!2d51.366135899999996!5e0!3m2!1sen!2s!4v1549213426836" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>--}}
+				<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d52923.18695937059!2d51.36627955803367!3d34.00025963859646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d33.9850358!2d51.4099625!4m5!1s0x3f969d6a3deb60a5%3A0x95e3a2cfcd892acb!2z2K_Yp9mG2LTar9in2Ycg2qnYp9i02KfZhuKArQ!3m2!1d34.0136234!2d51.366135899999996!5e0!3m2!1sen!2s!4v1549213426836" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d52923.18695937059!2d51.36627955803367!3d34.00025963859646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d33.9850358!2d51.4099625!4m5!1s0x3f969d6a3deb60a5%3A0x95e3a2cfcd892acb!2z2K_Yp9mG2LTar9in2Ycg2qnYp9i02KfZhuKArQ!3m2!1d34.0136234!2d51.366135899999996!5e0!3m2!1sen!2s!4v1549213426836" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 				<div class="contact-text">
 					<div class="col-md-4 contact-right">
 						<h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h4>
